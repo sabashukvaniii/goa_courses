@@ -1,0 +1,6 @@
+button.active{
+    background-color:#aaa;
+  }
+  button.active:hover{ /* combine two conditions */
+    background-color:#999;
+  }
