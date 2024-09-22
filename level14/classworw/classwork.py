@@ -1,4 +1,3 @@
-
 # listn = [1,2,3,4,5]
 # print(listn[0])
 # print(listn[1])
