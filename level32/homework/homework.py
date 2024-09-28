@@ -1,1 +1,1 @@
-#codewarsebi
+#sololearni gvqonda
