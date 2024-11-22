@@ -1,0 +1,77 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and general layout */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Feature Section Layout */
+  .feature-section {
+    background-color: white;
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Container for feature cards */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  /* Individual Card Styles */
+  .feature-card {
+    background-color: #f4f5f7;
+    width: 22%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-card h3 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  .feature-card p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Icon styles */
+  .icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1200px) {
+    .feature-card {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .feature-card {
+      width: 100%;
+    }
+  }
+  

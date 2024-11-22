@@ -1,0 +1,2 @@
+#The DOM, or Document Object Model, is a programming interface for web documents. It represents the structure of a document as a tree of objects, where each object corresponds to a part of the document, such as elements, attributes, and text.
+#console არის იგივე რაც ტერმინალი~
