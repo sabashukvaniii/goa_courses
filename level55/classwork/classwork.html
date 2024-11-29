@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Input Form</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="nameInput">Enter your name: </label>
+        <input type="text" id="nameInput" name="name" required>
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+
+    <p id="output"></p>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const output = document.getElementById('output');
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from refreshing the page
+
+            const nameValue = form.name.value;
+
+            output.textContent = `Hello, ${nameValue}!`;
+        });
+    </script>
+</body>
+</html>
