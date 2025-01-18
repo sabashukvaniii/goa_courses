@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="contact-section">
+        <div class="wrapper">
+          <h1>Contact Us</h1>
+
+          <form action="">
+            <div class="form-wrap">
+              <div class="name-group">
+                <div class="firstname-group">
+                  <label for="firstName" class="names-label"
+                    >First Name <span>*</span>
+                  </label>
+                  <input type="text" name="firstname" id="firstname" required />
+                  <p class="name-error error-msg">This field is required</p>
+                </div>
+
+                <div class="lastname-group">
+                  <label for="lastName" class="names-label"
+                    >Last Name <span>*</span>
+                  </label>
+                  <input type="text" name="lastName" id="lastname" />
+                  <p class="name-error error-msg">This field is required</p>
+                </div>
+              </div>
+
+              <label for="address" class="email-address"
+                >Email Address <span>*</span>
+              </label>
+              <input type="email" name="emailaddress" id="email-id" required />
+              <p class="email-error error-msg">
+                Please enter a valid email address
+              </p>
+
+              <div class="query-group">
+                <p class="querytype">Query Type <span>*</span></p>
+                <div class="query-wrap">
+                  <label for="generalenquiry" class="query-box">
+                    <input
+                      type="radio"
+                      name="querytype"
+                      id="generalenquiry"
+                      value="generalenquiry"
+                    />
+                    General Enquiry
+                  </label>
+                  <label for="supportrequest" class="query-box">
+                    <input
+                      type="radio"
+                      name="querytype"
+                      id="supportrequest"
+                      value="supportrequest"
+                    />
+                    Support Request
+                  </label>
+                </div>
+                <p class="query-error error-msg">Please select a query type</p>
+              </div>
+
+              <div class="message-group">
+                <label for="message" class="message-label"
+                  >Message <span>*</span>
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="0"
+                  rows="0"
+                ></textarea>
+                <p class="message-error error-msg">This field is required</p>
+              </div>
+
+              <div class="consent-group">
+                <input type="checkbox" name="Consent" id="consent" />
+                <label for="consent">
+                  I Consent to being contacted by the team <span>*</span>
+                </label>
+              </div>
+              <p class="consent-error error-msg">
+                To submit this form, please consent to being contacted
+              </p>
+
+              <button type="submit" class="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="success-wrap">
+          <img src="assets/images/icon-success-check.svg" alt="icon" />
+          <p class="success-msg">Message Sent!</p>
+          <p class="thankyou-msg">
+            Thanks for completing the form.We'll be in touch soon!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

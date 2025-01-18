@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --LightGreen: hsl(148, 38%, 91%);
+  --Green: hsl(169, 82%, 27%);
+  --red: hsl(0, 66%, 56%);
+  --white: hsl(0, 0%, 100%);
+  --mediumgrey: hsl(186, 15%, 59%);
+  --darkgrey: hsl(187, 24%, 22%);
+}
+
+body {
+  background-color: var(--LightGreen);
+  font-family: "Karla", sans-serif;
+}
+
+.contact-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  width: 650px;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: var(--darkgrey);
+}
+
+.name-group {
+  margin-top: 1.7rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.firstname-group,
+.lastname-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  position: relative;
+}
+
+.names-label {
+  font-size: 1em;
+  color: var(--darkgrey);
+  margin-bottom: 10px;
+}
+
+label > span {
+  color: var(--Green);
+}
+
+#firstname,
+#lastname {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  color: var(--darkgrey);
+  font-weight: 500;
+}
+
+.email-address {
+  display: block;
+  margin-top: 1.7rem;
+  font-size: 1em;
+  color: var(--darkgrey);
+  margin-bottom: 10px;
+}
+
+#email-id {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+.query-group {
+  margin-top: 1.7rem;
+}
+
+input:hover,
+#message:hover {
+  border-color: var(--Green);
+}
+
+input:focus-visible,
+#message:focus-visible {
+  outline: 2px solid var(--Green);
+  outline-offset: 1px;
+}
+
+.query-type {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.querytype {
+  color: var(--darkgrey);
+}
+
+p > span {
+  color: var(--Green);
+}
+
+.query-group {
+  width: 100%;
+}
+
+.query-wrap {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.query-box {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+#generalenquiry,
+#supportrequest {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--Green);
+}
+
+.query-box:hover {
+  background: var(--LightGreen);
+  border-color: var(--Green);
+}
+.message-group {
+  margin-top: 1.7rem;
+}
+
+.message-label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--darkgrey);
+}
+
+#message {
+  width: 100%;
+  height: 90px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.196);
+  padding: 15px 20px;
+  color: var(--darkgrey);
+  font-size: 1.05em;
+  font-weight: 500;
+  resize: none;
+}
+
+.consent-group {
+  position: relative;
+  margin-top: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#consent {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--Green);
+  color: var (--Green);
+}
+
+.consent-group > label {
+  cursor: pointer;
+  font-size: 0.95em;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 1.8rem;
+  padding: 10px 20px;
+  height: 50px;
+  color: var(--white);
+  background-color: var(--Green);
+  border: none;
+  font-size: 1.05em;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+
+.submit:hover {
+  background-color: hsl(169, 83%, 16%);
+}
+
+.error-msg {
+  margin: 5px 0px;
+  font-size: 0.9em;
+  color: var(--red);
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.success-wrap {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(170, 32%, 14%);
+  padding: 1.5rem;
+  border-radius: 15px;
+  color: var(--white);
+  transition: top 0.3s ease-in-out;
+}
+
+.success-msg {
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0 10px;
+  translate: 0 -5px;
+}
+
+.thankyou-msg {
+  color: var(--mediumgrey);
+  margin-top: 14px;
+}
+
+.success-dropdown {
+  top: 100px;
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    width: 90%;
+  }
+  .name-group {
+    margin-top: 1.7rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .query-wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 3rem 1rem;
+  }
+
+  .contact-section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  #message {
+    height: 150px;
+  }
+
+  .error-msg {
+    margin: 10px 0px;
+    font-size: 0.8em;
+  }
+
+  .consent-group > label {
+    text-wrap: balance;
+  }
+
+  .success-wrap {
+    width: 80%;
+  }
+}
