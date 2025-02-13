@@ -1,0 +1,109 @@
+<!-- Hoisting არის მექანიზმი JavaScript-ში, რომლის დროსაც ცვლადები და ფუნქციები „ამოიწევენ“ (hoist) თავიანთი_SCOPE_-ის თავში სკრიპტის შესრულებამდე.
+
+როგორ მუშაობს Hoisting?
+JavaScript-ის ინტერპრეტატორი პირველ რიგში ამოწმებს ცვლადებისა და ფუნქციების დეკლარაციებს, შემდეგ კი ასრულებს კოდს.
+ ეს ნიშნავს, რომ შეგიძლიათ გამოიძახოთ ფუნქციები ან გამოიყენოთ ცვლადები მათ გამოცხადებამდე (მაგრამ არა ყოველთვის, როგორც ვნახავთ). -->
+
+
+
+ <!-- Event Bubbling და Event Capturing ტესტირება
+ JavaScript-ის Event Bubbling და Event Capturing (ანუ Event Propagation) არის ორი გზა, რომლითაც მოვლენა (event) გადადის ელემენტების შორის DOM-ის ხის სტრუქტურაში.
+ 
+ Bubbling (ბაბლინგი) – მოვლენა (მაგ., click) პირველად ხორციელდება შვილ ელემენტზე და შემდეგ გადადის მშობელ ელემენტებამდე.
+ Capturing (კეპჩერინგი, ან Trickling) – მოვლენა იწყება ყველაზე მაღალ მშობელთან და შემდეგ გადადის შვილ ელემენტზე. -->
+
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .slider-container {
+            width: 500px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slider img {
+            width: 500px;
+            height: 300px;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+            <img src="https://via.placeholder.com/500x300/ff5733/ffffff?text=1" alt="Image 1">
+            <img src="https://via.placeholder.com/500x300/33ff57/ffffff?text=2" alt="Image 2">
+            <img src="https://via.placeholder.com/500x300/5733ff/ffffff?text=3" alt="Image 3">
+            <img src="https://via.placeholder.com/500x300/ff33a1/ffffff?text=4" alt="Image 4">
+            <img src="https://via.placeholder.com/500x300/33a1ff/ffffff?text=5" alt="Image 5">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <script>
+        const slider = document.querySelector(".slider");
+        const images = document.querySelectorAll(".slider img");
+        const prevButton = document.querySelector(".prev");
+        const nextButton = document.querySelector(".next");
+
+        let index = 0;
+        const totalImages = images.length;
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${index * 500}px)`;
+        }
+
+        function nextSlide() {
+            index = (index + 1) % totalImages;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            index = (index - 1 + totalImages) % totalImages;
+            updateSlider();
+        }
+
+        nextButton.addEventListener("click", nextSlide);
+        prevButton.addEventListener("click", prevSlide);
+
+        // Auto-slide every 3 seconds
+        setInterval(nextSlide, 3000);
+    </script>
+
+</body>
+</html> -->
+
+
+

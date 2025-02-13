@@ -1,0 +1,54 @@
+<!-- Ternary ოპერატორი არის შეკვეცილ ფორმა if-else-ის.  მისი სტრუქტურაა: condition ? expr1 : expr2;
+თუ condition (პირობა) მართალია (true), შესრულდება expr1.
+თუ condition ცრუა (false), შესრულდება expr2. -->
+
+
+<!-- && ოპერატორი ლოგიკურ ოპერაციებში გამოიყენება და აბრუნებს true-ს მხოლოდ მაშინ, როცა ორივე ოპერანდი მართალია.
+როგორ მუშაობს?
+expr1 && expr2;
+თუ expr1 არის false, აბრუნებს expr1-ს (არ ამოწმებს expr2-ს).
+თუ expr1 არის true, აბრუნებს expr2-ს. -->
+
+
+<!-- function testVar() {
+    if (true) {
+        var x = 10; // var არ აქვს block scope
+    }
+    console.log(x); // 10 (მიუხედავად იმისა, რომ if-ბლოკშია გამოცხადებული)
+}
+
+testVar(); -->
+
+
+<!-- function testLet() {
+    if (true) {
+        let y = 20; // let აქვს block scope
+    }
+    console.log(y); // Error: y is not defined
+}
+
+testLet(); -->
+
+
+<!-- function testConst() {
+    const z = 30;
+    console.log(z); // 30
+
+    z = 40; // Error: Assignment to constant variable.
+}
+
+testConst(); -->
+
+
+<!-- let age = 17;
+let canVote = age >= 18 ? "You can vote!" : "You cannot vote yet.";
+console.log(canVote); // "You cannot vote yet." -->
+
+<!-- 
+let userName = "";
+let greeting = userName ? `Hello, ${userName}!` : "Hello, guest!";
+console.log(greeting); // "Hello, guest!" -->
+
+
+<!-- let isLoggedIn = false;
+console.log(isLoggedIn ? "Welcome back!" : "Please log in."); -->

@@ -1,0 +1,114 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #container {
+            position: relative;
+            width: 300px;
+            height: 150px;
+            background-color: red;
+        }
+        #inner-cube {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="inner-cube"></div>
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+        const cube = document.getElementById('inner-cube');
+
+        let position = 0;
+        const maxPosition = container.offsetWidth - cube.offsetWidth;
+
+        function animate() {
+            if (position < maxPosition) {
+                position += 2; // Adjust speed
+                cube.style.transform = `translateX(${position}px)`;
+                requestAnimationFrame(animate);
+            }
+        }
+
+        animate(); // Start the animation
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            border-radius: 50%; /* Outer cube as a circle */
+        }
+        #inner-cube {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            border-radius: 4px; /* Rounded corners for inner cube */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="inner-cube"></div>
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+        const cube = document.getElementById('inner-cube');
+
+        const centerX = container.offsetWidth / 2;
+        const centerY = container.offsetHeight / 2;
+        const radius = centerX - cube.offsetWidth / 2; // Radius for circular path
+        let angle = 0;
+
+        function animate() {
+            // Update the angle for counter-clockwise rotation
+            angle -= 0.02; // Adjust speed (negative for counter-clockwise)
+            const x = centerX + radius * Math.cos(angle) - cube.offsetWidth / 2;
+            const y = centerY + radius * Math.sin(angle) - cube.offsetHeight / 2;
+            cube.style.transform = `translate(${x}px, ${y}px)`;
+            requestAnimationFrame(animate);
+        }
+
+        animate(); // Start the animation
+    </script>
+</body>
+</html> -->

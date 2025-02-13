@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submit Event</title>
+</head>
+<body>
+    <form id="userForm">
+        <label for="name">სახელი:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        
+        <label for="email">ელ-ფოსტა:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        
+        <button type="submit">გაგზავნა</button>
+    </form>
+
+    <script>
+        document.getElementById("userForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // ფორმის სტანდარტული გაგზავნის თავიდან ასაცილებლად
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            console.log("სახელი:", name);
+            console.log("ელ-ფოსტა:", email);
+            console.log("პაროლი:", password);
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- თანამედროვე JavaScript-ის საფუძველი
+ES6 (ECMAScript 2015) არის JavaScript-ის ერთ-ერთი ყველაზე მნიშვნელოვანი განახლება,
+რომელმაც ენა უფრო მოქნილი, ეფექტური და კოდის წერისთვის სასიამოვნო გახადა.
+იგი ასევე იყო დაფუძვნებული 2015 წელს -->
+
+
+
+<!-- Scope არის ის, რაც განსაზღვრავს, სად შეგვიძლია ცვლადის გამოყენება კოდში.
+ანუ, რომელ ადგილებში ჩანს და მუშაობს ეს ცვლადი. 
+ზოგი ცვლადი ყველგან ჩანს (გლობალური), ზოგიც მხოლოდ კონკრეტული ფუნქციის ან ბლოკის 
+შიგნით (ლოკალური) -->
+
+
+
+<!-- <script>
+    // 1. Template literal ცვლადების ჩასმით
+const firstName = "Giorgi";
+const lastName = "Khachidze";
+console.log(`მომხმარებლის სახელი: ${firstName} ${lastName}`);
+
+// 2. Template literal გამოთვლებში
+const num1 = 10;
+const num2 = 5;
+console.log(`ორი რიცხვის ჯამი: ${num1 + num2}`);
+
+// 3. Template literal ობიექტიდან მონაცემების მიღებაში
+const user = { name: "Nino", age: 30 };
+console.log(`მომხმარებლის სახელი: ${user.name}, ასაკი: ${user.age}`);
+</script> -->
+
+
+
+<!-- <script>
+// 1. Check if a number is positive, negative, or zero
+const num = -5;
+const result = num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero";
+console.log(result);
+
+// 2. Determine if a student passed or failed based on the score
+const score = 75;
+const status = score >= 60 ? "Passed" : "Failed";
+console.log(status);
+
+// 3. Choose a discount based on membership type
+const membership = "premium";
+const discount = membership === "premium" ? "20% discount" : "10% discount";
+console.log(discount);
+</script> -->
+
+
+
+<!-- <script>
+    // 1. თუ მომხმარებელი ავტორიზებულია, გამოიტანოს Welcome
+let isLoggedIn = true;
+isLoggedIn && console.log("Welcome to the system!");
+
+// 2. თუ საკმარისი თანხა აქვს, შეიძინოს პროდუქტი
+let hasEnoughMoney = false;
+hasEnoughMoney && console.log("Purchase successful!");
+
+// 3. თუ მომხმარებელს აქვს ადმინისტრატორის როლი, მიიღოს წვდომა ადმინისტრაციულ პანელზე
+let isAdmin = true;
+isAdmin && console.log("Access granted to the admin panel.");
+</script> -->
